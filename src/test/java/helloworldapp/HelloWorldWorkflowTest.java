@@ -45,6 +45,3 @@ public class HelloWorldWorkflowTest {
         verify(format).composeGreeting(eq("test"));
     }
 }
-
-
-
