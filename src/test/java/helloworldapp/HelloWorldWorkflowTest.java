@@ -1,3 +1,4 @@
+// @@@SNIPSTART hello-world-project-template-java-workflow-test
 package helloworldapp;
 
 import static org.mockito.Matchers.eq;
@@ -45,3 +46,4 @@ public class HelloWorldWorkflowTest {
         verify(format).composeGreeting(eq("test"));
     }
 }
+// @@@SNIPEND
