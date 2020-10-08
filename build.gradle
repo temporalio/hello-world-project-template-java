@@ -20,15 +20,32 @@ repositories {
     jcenter()
 }
 
+// @@@SNIPSTART hello-world-project-template-java-gradle-dependencies
 dependencies {
-    // This dependency is used by the application.
+    // Application dependencies
     implementation 'com.google.guava:guava:29.0-jre'
+    implementation 'io.temporal:temporal-sdk:1.0.0'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
 
-    // Use JUnit test framework
+    // Testing dependencies
     testImplementation 'junit:junit:4.13'
+    testImplementation 'org.mockito:mockito-all:1.10.19'
 }
+// @@@SNIPEND
 
 application {
     // Define the main class for the application.
-    mainClassName = 'helloworldapp.App'
+    mainClassName = 'helloworldapp.InitiateHelloWorld'
 }
+
+// @@@SNIPSTART hello-world-project-template-java-gradle-tasks
+task sayHello(type: JavaExec) {
+    main = 'helloworldapp.InitiateHelloWorld'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task startWorker(type: JavaExec) {
+    main = 'helloworldapp.HelloWorldWorker'
+    classpath = sourceSets.main.runtimeClasspath
+}
+// @@@SNIPEND
