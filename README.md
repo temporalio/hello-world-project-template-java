@@ -2,7 +2,7 @@
 
 This project can be used as a template to start building your own Temporal Workflow application.
 
-Follow the [Build a "Hello World!" app from scratch tutorial](https://docs/temporal.io/docs/java-hello-world) to learn more.
+Follow the [Build a "Hello World!" app from scratch tutorial](https://docs.temporal.io/docs/java-hello-world) to learn more.
 
 This project uses [Snipsync](https://github.com/temporalio/snipsync) comment wrappers to automatically keep code snippets up to date within our documentation.
 
