@@ -9,7 +9,7 @@ public class InitiateHelloWorld {
 
     public static void main(String[] args) throws Exception {
         // This gRPC stubs wrapper talks to the local docker instance of the Temporal service.
-        WorkflowServiceStubs service = WorkflowServiceStubs.newInstance();
+        WorkflowServiceStubs service = WorkflowServiceStubs.newLocalServiceStubs();
         // WorkflowClient can be used to start, signal, query, cancel, and terminate Workflows.
         WorkflowClient client = WorkflowClient.newInstance(service);
         WorkflowOptions options = WorkflowOptions.newBuilder()
