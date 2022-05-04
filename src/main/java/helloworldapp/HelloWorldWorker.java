@@ -10,7 +10,7 @@ public class HelloWorldWorker {
 
     public static void main(String[] args) {
         // This gRPC stubs wrapper talks to the local docker instance of the Temporal service.
-        WorkflowServiceStubs service = WorkflowServiceStubs.newInstance();
+        WorkflowServiceStubs service = WorkflowServiceStubs.newLocalServiceStubs();
         WorkflowClient client = WorkflowClient.newInstance(service);
         // Create a Worker factory that can be used to create Workers that poll specific Task Queues.
         WorkerFactory factory = WorkerFactory.newInstance(client);
