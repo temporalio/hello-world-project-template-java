@@ -24,7 +24,7 @@ repositories {
 
 // @@@SNIPSTART hello-world-project-template-java-gradle-dependencies
 dependencies {
-    implementation group: 'io.temporal', name: 'temporal-sdk', version: '1.11.0'
+    implementation group: 'io.temporal', name: 'temporal-sdk', version: '1.13.0'
     implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.11'
     implementation group: 'commons-configuration', name: 'commons-configuration', version: '1.10'
 
