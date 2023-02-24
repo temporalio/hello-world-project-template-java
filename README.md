@@ -2,7 +2,7 @@
 
 This project can be used as a template to start building your own Temporal Workflow application.
 
-Follow the [Build a "Hello World!" app from scratch tutorial](https://docs.temporal.io/docs/java/hello-world-tutorial) to learn more.
+Follow the [Build a "Hello World!" app from scratch tutorial](https://learn.temporal.io/getting_started/java/hello_world_in_java/) to learn more.
 
 This project uses [Snipsync](https://github.com/temporalio/snipsync) comment wrappers to automatically keep code snippets up to date within our documentation.
 
@@ -20,7 +20,7 @@ Either open the project in IntelliJ, which will automatically build it, or in th
 
 ## Run the Workflow
 
-First, make sure the [Temporal server](https://docs.temporal.io/docs/server/quick-install) is running.
+First, make sure the [Temporal development cluster](https://docs.temporal.io/application-development/foundations#run-a-dev-cluster) is running.
 
 To start the Workflow, either run the InitiateHelloWorld class from IntelliJ or from the project root run:
 
