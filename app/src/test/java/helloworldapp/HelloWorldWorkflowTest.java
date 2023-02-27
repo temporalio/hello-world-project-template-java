@@ -20,7 +20,7 @@ public class HelloWorldWorkflowTest {
 
     @Test
     public void testGetGreeting() {
-        testWorkflowRule.getWorker().registerActivitiesImplementations(new FormatImpl());
+        testWorkflowRule.getWorker().registerActivitiesImplementations(new HelloWorldActivityImpl());
         testWorkflowRule.getTestEnvironment().start();
 
         HelloWorldWorkflow workflow =
@@ -36,7 +36,7 @@ public class HelloWorldWorkflowTest {
 
     @Test
     public void testMockedGetGreeting() {
-        Format formatActivities = mock(Format.class, withSettings().withoutAnnotations());
+        HelloWorldActivity formatActivities = mock(HelloWorldActivity.class, withSettings().withoutAnnotations());
         when(formatActivities.composeGreeting(anyString())).thenReturn("Hello World!");
         testWorkflowRule.getWorker().registerActivitiesImplementations(formatActivities);
         testWorkflowRule.getTestEnvironment().start();

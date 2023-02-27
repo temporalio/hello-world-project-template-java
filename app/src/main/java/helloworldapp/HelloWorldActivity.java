@@ -5,9 +5,11 @@ import io.temporal.activity.ActivityInterface;
 import io.temporal.activity.ActivityMethod;
 
 @ActivityInterface
-public interface Format {
+public interface HelloWorldActivity {
 
-    @ActivityMethod
+    // Define your activity method which can be called during workflow execution
+    @ActivityMethod(name = "greet")
     String composeGreeting(String name);
+    
 }
 // @@@SNIPEND
