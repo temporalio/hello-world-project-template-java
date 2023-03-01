@@ -30,6 +30,6 @@ build
 # IntelliJ Idea
 .idea
 
-bin/*
+**/bin/*
 
 .vscode/*
