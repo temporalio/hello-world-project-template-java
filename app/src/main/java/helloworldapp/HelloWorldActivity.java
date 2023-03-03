@@ -8,7 +8,7 @@ import io.temporal.activity.ActivityMethod;
 public interface HelloWorldActivity {
 
     // Define your activity method which can be called during workflow execution
-    @ActivityMethod(name = "greet")
+    @ActivityMethod
     String composeGreeting(String name);
     
 }
