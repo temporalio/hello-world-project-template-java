@@ -17,7 +17,6 @@ public class InitiateHelloWorld {
          * Set Workflow options such as WorkflowId and Task Queue so the worker knows where to list and which workflows to execute.
          */
         WorkflowOptions options = WorkflowOptions.newBuilder()
-                    .setWorkflowId(Shared.HELLO_WORLD_WORKFLOW_ID)
                     .setTaskQueue(Shared.HELLO_WORLD_TASK_QUEUE)
                     .build();
 
