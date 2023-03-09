@@ -9,7 +9,7 @@ import io.temporal.serviceclient.WorkflowServiceStubs;
 public class InitiateHelloWorld {
 
     public static void main(String[] args) throws Exception {
-        
+
         // This gRPC stubs wrapper talks to the local docker instance of the Temporal service.
         WorkflowServiceStubs service = WorkflowServiceStubs.newLocalServiceStubs();
 
@@ -17,7 +17,7 @@ public class InitiateHelloWorld {
         WorkflowClient client = WorkflowClient.newInstance(service);
 
         // Define our workflow unique id
-        final String WORKFLOW_ID = "HelloWorld";
+        final String WORKFLOW_ID = "HelloWorldWorkflowID";
 
         /*
          * Set Workflow options such as WorkflowId and Task Queue so the worker knows where to list and which workflows to execute.
