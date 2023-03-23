@@ -8,6 +8,11 @@ import java.time.Duration;
 
 public class HelloWorldWorkflowImpl implements HelloWorldWorkflow {
 
+    /* 
+     * At least one of the following options needs to be defined:
+     * - setStartToCloseTimeout
+     * - setScheduleToCloseTimeout
+     */
     ActivityOptions options = ActivityOptions.newBuilder()
             .setStartToCloseTimeout(Duration.ofSeconds(2))
             .build();

@@ -19,7 +19,7 @@ public class HelloWorldWorkflowTest {
                     .build();
 
     @Test
-    public void testGetGreeting() {
+    public void testIntegrationGetGreeting() {
         testWorkflowRule.getWorker().registerActivitiesImplementations(new HelloWorldActivityImpl());
         testWorkflowRule.getTestEnvironment().start();
 
