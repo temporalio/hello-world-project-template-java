@@ -1,7 +1,7 @@
 // @@@SNIPSTART hello-world-project-template-java-activity
 package helloworldapp;
 
-public class HelloWorldActivityImpl implements HelloWorldActivity {
+public class HelloWorldActivitiesImpl implements HelloWorldActivities {
 
     @Override
     public String composeGreeting(String name) {

@@ -14,7 +14,7 @@ public class HelloWorldWorkflowImpl implements HelloWorldWorkflow {
      * - setScheduleToCloseTimeout
      */
     ActivityOptions options = ActivityOptions.newBuilder()
-            .setStartToCloseTimeout(Duration.ofSeconds(2))
+            .setStartToCloseTimeout(Duration.ofSeconds(60))
             .build();
 
     /*
@@ -25,13 +25,13 @@ public class HelloWorldWorkflowImpl implements HelloWorldWorkflow {
      * 
      * The activity options that were defined above are passed in as a parameter.
      */
-    private final HelloWorldActivity activity = Workflow.newActivityStub(HelloWorldActivity.class, options);
+    private final HelloWorldActivities activity = Workflow.newActivityStub(HelloWorldActivities.class, options);
 
+    // This is the entry point to the Workflow.
     @Override
     public String getGreeting(String name) {
 
-        /**  
-         * This is the entry point to the Workflow.
+        /**   
          * If there were other Activity methods they would be orchestrated here or from within other Activities.
          * This is a blocking call that returns only after the activity has completed.
          */

@@ -40,7 +40,7 @@ public class HelloWorldWorker {
         * Register our Activity Types with the Worker. Since Activities are stateless and thread-safe,
         * the Activity Type is a shared instance.
         */
-        worker.registerActivitiesImplementations(new HelloWorldActivityImpl());
+        worker.registerActivitiesImplementations(new HelloWorldActivitiesImpl());
 
         /*
         * Start all the workers registered for a specific task queue.
