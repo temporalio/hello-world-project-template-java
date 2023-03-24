@@ -2,12 +2,12 @@
 package helloworldapp;
 
 import io.temporal.activity.ActivityInterface;
-import io.temporal.activity.ActivityMethod;
 
 @ActivityInterface
-public interface Format {
+public interface HelloWorldActivities {
 
-    @ActivityMethod
+    // Define your activity methods which can be called during workflow execution
     String composeGreeting(String name);
+    
 }
 // @@@SNIPEND

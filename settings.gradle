@@ -8,3 +8,4 @@
  */
 
 rootProject.name = 'hello-world-project-template-java'
+include('app')
